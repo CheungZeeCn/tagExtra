@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.4)  4 OCT 2013 22:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.4)  4 OCT 2013 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -605,7 +605,7 @@ if-fer-ent from au-to-matic keyphrase
 Here is how much of TeX's memory you used:
  4291 strings out of 493315
  64707 string characters out of 6137905
- 146703 words of memory out of 5000000
+ 146702 words of memory out of 5000000
  7673 multiletter control sequences out of 15000+600000
  11074 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -619,7 +619,7 @@ t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist
 onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on proposal.pdf (7 pages, 121751 bytes).
+Output written on proposal.pdf (7 pages, 121747 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
