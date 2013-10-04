@@ -1,0 +1,99 @@
+\begin{thebibliography}{10}
+
+\bibitem{blei2003modeling}
+{\sc Blei, D.~M., and Jordan, M.~I.}
+\newblock Modeling annotated data.
+\newblock In {\em Proceedings of the 26th annual international ACM SIGIR
+  conference on Research and development in informaion retrieval\/} (2003),
+  ACM, pp.~127--134.
+
+\bibitem{bundschus2009hierarchical}
+{\sc Bundschus, M., Yu, S., Tresp, V., Rettinger, A., Dejori, M., and Kriegel,
+  H.-P.}
+\newblock Hierarchical bayesian models for collaborative tagging systems.
+\newblock In {\em Data Mining, 2009. ICDM'09. Ninth IEEE International
+  Conference on\/} (2009), IEEE, pp.~728--733.
+
+\bibitem{dean2008mapreduce}
+{\sc Dean, J., and Ghemawat, S.}
+\newblock Mapreduce: simplified data processing on large clusters.
+\newblock {\em Communications of the ACM 51}, 1 (2008), 107--113.
+
+\bibitem{fujimura2007blogosonomy}
+{\sc Fujimura, S., Fujimura, K., and Okuda, H.}
+\newblock Blogosonomy: Autotagging any text using bloggers' knowledge.
+\newblock In {\em Web Intelligence, IEEE/WIC/ACM International Conference on\/}
+  (2007), IEEE, pp.~205--212.
+
+\bibitem{heymann2008social}
+{\sc Heymann, P., Ramage, D., and Garcia-Molina, H.}
+\newblock Social tag prediction.
+\newblock In {\em Proceedings of the 31st annual international ACM SIGIR
+  conference on Research and development in information retrieval\/} (2008),
+  ACM, pp.~531--538.
+
+\bibitem{iwata2009modeling}
+{\sc Iwata, T., Yamada, T., and Ueda, N.}
+\newblock Modeling social annotation data with content relevance using a topic
+  model.
+\newblock In {\em Advances in Neural Information Processing Systems\/} (2009),
+  pp.~835--843.
+
+\bibitem{jaschke2008tag}
+{\sc J{\"a}schke, R., Marinho, L., Hotho, A., Schmidt-Thieme, L., and Stumme,
+  G.}
+\newblock Tag recommendations in social bookmarking systems.
+\newblock {\em Ai Communications 21}, 4 (2008), 231--247.
+
+\bibitem{katakis2008multilabel}
+{\sc Katakis, I., Tsoumakas, G., and Vlahavas, I.}
+\newblock Multilabel text classification for automated tag suggestion.
+\newblock In {\em Proceedings of the ECML/PKDD\/} (2008).
+
+\bibitem{krestel2009latent}
+{\sc Krestel, R., Fankhauser, P., and Nejdl, W.}
+\newblock Latent dirichlet allocation for tag recommendation.
+\newblock In {\em Proceedings of the third ACM conference on Recommender
+  systems\/} (2009), ACM, pp.~61--68.
+
+\bibitem{lee2007automatic}
+{\sc Lee, S. O.~K., and Chun, A. H.~W.}
+\newblock Automatic tag recommendation for the web 2.0 blogosphere using
+  collaborative tagging and hybrid ann semantic structures.
+\newblock {\em ACOS 7\/} (2007), 88--93.
+
+\bibitem{liu2011automatic}
+{\sc Liu, Z., Chen, X., Zheng, Y., and Sun, M.}
+\newblock Automatic keyphrase extraction by bridging vocabulary gap.
+\newblock In {\em Proceedings of the Fifteenth Conference on Computational
+  Natural Language Learning\/} (2011), Association for Computational
+  Linguistics, pp.~135--144.
+
+\bibitem{liu2009clustering}
+{\sc Liu, Z., Li, P., Zheng, Y., and Sun, M.}
+\newblock Clustering to find exemplar terms for keyphrase extraction.
+\newblock In {\em Proceedings of the 2009 Conference on Empirical Methods in
+  Natural Language Processing: Volume 1-Volume 1\/} (2009), Association for
+  Computational Linguistics, pp.~257--266.
+
+\bibitem{mishne2006autotag}
+{\sc Mishne, G.}
+\newblock Autotag: a collaborative approach to automated tag assignment for
+  weblog posts.
+\newblock In {\em Proceedings of the 15th international conference on World
+  Wide Web\/} (2006), ACM, pp.~953--954.
+
+\bibitem{ohkura2006browsing}
+{\sc Ohkura, T., Kiyota, Y., and Nakagawa, H.}
+\newblock Browsing system for weblog articles based on automated folksonomy.
+\newblock In {\em Proceedings of the WWW 2006 Workshop on the Weblogging
+  Ecosystem: Aggregation, Analysis and Dynamics, at WWW\/} (2006), vol.~2006.
+
+\bibitem{rendle2009learning}
+{\sc Rendle, S., Balby~Marinho, L., Nanopoulos, A., and Schmidt-Thieme, L.}
+\newblock Learning optimal ranking with tensor factorization for tag
+  recommendation.
+\newblock In {\em Proceedings of the 15th ACM SIGKDD international conference
+  on Knowledge discovery and data mining\/} (2009), ACM, pp.~727--736.
+
+\end{thebibliography}

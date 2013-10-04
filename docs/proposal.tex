@@ -1,0 +1,151 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{indentfirst}
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{ulem}
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\begin{document}
+
+
+\section{Motivation}
+Online information is wildly increasing since the last decade. Providing meaningful information timely has become urgent needs for companies like Microsoft, Google, Facebook, etc. Naively searching all the data assuredly won’t meet the demand. A basic solution would come into mind: category the information by topics or keywords. This encounters a problem: not every item has been given topics or keywords. Manually extracting the keywords may work in small datasets, but it will never be applicable for a search engine company. Thus, we need to design an algorithm which would work on disparate stack exchange sites to predict the tags (a.k.a. keywords, topics, summaries).
+
+
+\section{Most related topics}
+We learn a lot about Big Data Analystic in class, we may happily apply the methods listed below(not limited to),
+\begin{itemize}
+\item MapReduce and Frequent Itemsets;
+\item Locality Sensitive Hashing;
+\item Mining Data Streams;
+\item Dimensionality Reduction;
+\item Online Learning.
+\end{itemize}
+     
+\section{deliverables}
+We plan to participate in competition on the website: https://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction. So we would deliver a runnable system and get a rank in top 20
+
+\section{ tentative dataset}
+The dataset is very large, almost consisting of 6.75GB training data and 2.20GB testing data.
+
+For training data, it has 6034195 items (questions). Every item includes Id, Title, Body and Tags. For testing data, it has 2013337 items. Every item only contains Id, Title and Body.
+Following are some other things about the dataset,
+\begin{itemize}
+\item \textbf{Id} - Unique identifier for each question
+\item \textbf{Title} - The question's title
+\item \textbf{Body} - The body of the question
+\item \textbf{Tags} - The tags associated with the question (all lowercase, should not contain tabs '
+\textbackslash t' or ampersands '\&')
+\end{itemize}
+
+The questions are randomized and contain a mix of verbose text sites as well as sites related to math and programming. The number of questions from each site may vary, and no filtering has been performed on the questions (such as closed questions).
+
+
+\section{techniques/algorithms we will apply}
+\subsection{Word Frequency Analysis}
+Much early work concerned the frequency of term usage in the text, but most of this work focused on defining keywords in relation to a single document. 
+The idea of statistically analyzing the frequency of keyword usage within a document in relation to multiple other documents became more common. This technique, known as Term Frequency - Inverse Document Frequency or simply TF-IDF, weights a given term to determine how well the term describes an individual document within a corpus.
+ It does this by weighting the term positively for the number of times the term occurs within the specific document, while also weighting the term negatively relative to the number of documents which contain the term. When the TF-IDF function is run against all terms in all documents in the document corpus, the words can be ranked by their scores. A higher TF-IDF score indicates that a word is both important to the document, as well as relatively uncommon across the document corpus. This is often interpreted to mean that the word is significant to the document, and could be used to accurately summarize the document. In this case, we simply regard the questions as multiple document/text. However, the title of question may tell more useful information than the body. As a result, we may weight more on the title.
+
+\subsection{Word Co-Occurrence Relationships}
+Word co-occurrence aims to find similarity between words or similarities of meaning among word patterns. The sentences in the question text are considered as a set of words; So we extract keywords from text uses word co-occurrence to build a co-occurrence matrix. Words are important to the text if they co-occur with other words more often in the text than they would if every instance of the word were randomly distributed. For a certain word $w_i$, this can be thought of as the ratio of the number of co-occurrences of words $w_i$, $w_j$ to the number of all other co-occurrences involving wi. Under the given assumptions, a high ratio would mean that the word $w_i$ is a likely keyword for the question text.
+
+\section{Measure Method}
+We use Mean F1 Score to evaluate the performance of our system. The F1 score, commonly used in information retrieval, measures accuracy using the statistics precision $p$ and recall $r$. Precision is the ratio of true positives ($tp$) to all predicted positives ($tp$ + $fp$). Recall is the ratio of true positives to all actual positives ($tp$ + $fn$). The F1 score is given by:
+
+\begin{eqnarray}
+ p & = & \frac{tp}{tp+fp}\\
+ r & = & \frac{tp}{tp+fn}\\
+ F1 & = & \frac{2pr}{p+r}
+\end{eqnarray}
+
+The F1 metric weights recall and precision equally, and a good retrieval algorithm will maximize both precision and recall simultaneously. Thus moderately good performance on both will be favored over extremely good performance on one and poor performance on the other.
+We have a labeled test set, prepared by Kaggle.com. For this metric, each row of the prediction represents a list of items that are ``correct" for that row. We compute the F1 metric for each row: The ``true positives" are the intersection of the two lists, false positives are predicted items that aren't real, and false negatives are real items that aren't predicted.
+There is a leader board provided byKaggle.com. However, this leader board is calculated on approximately 30\% of the test data. The final results will be based on the other 70\%, so the final standings may be different. The final report deadline of this course is 6, Dec, which is earlier than the competition deadline. Therefore, we can only report the performance of our system in the 30\% of the test data.
+
+\section{Related work}
+
+It is popular for users in Web 2.0 era to freely annotate online resources with tags. To ease the annotation process, it has been great interest in automatic tag suggestion.
+
+FolkRank \cite{jaschke2008tag} and Matrix Factorization \cite{rendle2009learning} are representative collaborative filtering methods for social tag suggestion.
+
+Some researchers regarded social tag suggestion as a classification problem by considering each tag as a category label \cite{ohkura2006browsing, mishne2006autotag, lee2007automatic, katakis2008multilabel, fujimura2007blogosonomy, heymann2008social}. Various classifiers such as Naive Bayes, kNN, SVM and neural networks have been explored to solve the social tag suggestion problem.
+
+There are two issues emerging from the classification-based methods:
+
+\begin{itemize}
+
+\item The annotations provided by users are noisy, and the classification-based methods can not handle the issue well.
+
+\item The training cost and classification cost of many classification-based methods are usually in proportion to the number of classification labels. These methods may thus be inefficient for a real-world social tagging system, where hundreds of thousands of unique tags should be considered as classification labels.
+
+\end{itemize}
+
+Inspired by the popularity of latent topic models such as Latent Dirichlet Allocation (LDA) \cite{blei2003modeling}, various methods have been proposed to model tags using generative latent topic models. One intuitive approach is assuming that both tags and words are generated from the same set of latent topics. By representing both tags and descriptions as the distributions of latent topics, this approach suggests tags according to their likelihood given the description \cite{krestel2009latent, liu2009clustering}. Bundschus et al. \cite{bundschus2009hierarchical} proposed a joint latent topic model of users, words and tags. Iwata et al. \cite{iwata2009modeling} proposed an LDA-based topic model, Content Relevance Model (CRM), which aimed at finding the content-related tags for suggestion.
+
+It should also be noted that social tag suggestion is different from automatic keyphrase extraction \cite{liu2011automatic}. Keyphrase extraction aims at selecting terms from the given document to represent the main topics of the document. On the contrary, in social tag suggestion, the suggested tags do not necessarily appear in the given resource description. We can thus regard social tag suggestion as a task of selecting appropriate tags from a controlled tag vocabulary for the given resource description.
+
+
+\section{Rough timeline}
+
+We will start doing our project after the proposal peer review. We think we can collect enough valuable suggestions from the peer review.
+
+We set two Milestones in our project.
+
+\begin{itemize}
+\item Milestone 1: Finish feature extracting with the help of mapreduce \cite{dean2008mapreduce}. The due is Oct 25,2013
+\item Milestone 2: Finish tag predicting with our own algorithm. The due is Oct 8, 2013.
+\end{itemize}
+
+The remaining time is for refining our system.
+
+
+\bibliographystyle{acm}
+\bibliography{cite}
+\end{document}
