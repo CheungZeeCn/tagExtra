@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.4)  4 OCT 2013 21:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.4)  4 OCT 2013 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -455,18 +455,18 @@ Package tocloft Info: The document has section divisions on input line 44.
 (./proposal.aux)
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -562,56 +562,66 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 87.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 87.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 87.
+
+[1
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
 
-Overfull \hbox (29.59894pt too wide) in paragraph at lines 72--73
+Overfull \hbox (29.59894pt too wide) in paragraph at lines 105--106
 []\OT1/cmr/m/n/10.95 We plan to par-tic-i-pate in com-pe-ti-tion on the web-sit
 e: https://www.kaggle.com/c/facebook-
  []
 
-[1
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 97.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 97.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 97.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-[2] [3]
-Overfull \hbox (1.67644pt too wide) in paragraph at lines 132--133
+[2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 130.
+ [3] [4]
+Overfull \hbox (1.67644pt too wide) in paragraph at lines 165--166
 []\OT1/cmr/m/n/10.95 It should also be noted that so-cial tag sug-ges-tion is d
 if-fer-ent from au-to-matic keyphrase
  []
 
-(./proposal.bbl [4] [5]) [6] (./proposal.aux) ) 
+(./proposal.bbl [5] [6]) [7] (./proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 4276 strings out of 493315
- 64520 string characters out of 6137905
- 146291 words of memory out of 5000000
- 7661 multiletter control sequences out of 15000+600000
- 9506 words of font info for 34 fonts, out of 8000000 for 9000
+ 4291 strings out of 493315
+ 64707 string characters out of 6137905
+ 146687 words of memory out of 5000000
+ 7673 multiletter control sequences out of 15000+600000
+ 11074 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  44i,10n,43p,843b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2013/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on proposal.pdf (6 pages, 105438 bytes).
+st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on proposal.pdf (7 pages, 121739 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
