@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.4)  4 OCT 2013 22:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.4)  4 OCT 2013 22:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -572,15 +572,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 100.
+
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
 
-Overfull \hbox (29.59894pt too wide) in paragraph at lines 105--106
+Overfull \hbox (29.59894pt too wide) in paragraph at lines 108--109
 []\OT1/cmr/m/n/10.95 We plan to par-tic-i-pate in com-pe-ti-tion on the web-sit
 e: https://www.kaggle.com/c/facebook-
  []
@@ -591,20 +592,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
+[1]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 130.
- [3] [4]
-Overfull \hbox (1.67644pt too wide) in paragraph at lines 165--166
+(Font)              <10.95> on input line 133.
+ [2] [3]
+Overfull \hbox (1.67644pt too wide) in paragraph at lines 168--169
 []\OT1/cmr/m/n/10.95 It should also be noted that so-cial tag sug-ges-tion is d
 if-fer-ent from au-to-matic keyphrase
  []
 
-(./proposal.bbl [5] [6]) [7] (./proposal.aux) ) 
+(./proposal.bbl [4] [5]) [6] (./proposal.aux) ) 
 Here is how much of TeX's memory you used:
  4291 strings out of 493315
  64707 string characters out of 6137905
- 146687 words of memory out of 5000000
+ 146703 words of memory out of 5000000
  7673 multiletter control sequences out of 15000+600000
  11074 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -618,7 +619,7 @@ t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist
 onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on proposal.pdf (7 pages, 121760 bytes).
+Output written on proposal.pdf (7 pages, 121751 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream

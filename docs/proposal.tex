@@ -53,7 +53,7 @@
 
 
 \newcommand{\hmwkTitle}{Project Proposal: \\ TagExtra} % Assignmnt title
-\newcommand{\hmwkDueDate}{FriDay,\ Oct\ 4,\ 2013} % Due date
+\newcommand{\hmwkDueDate}{ Friday, \ Oct\ 4,\ 2013,  23:59:59 } % Due date
 \newcommand{\hmwkClass}{CSCI5510} % Course/class
 \newcommand{\hmwkClassTime}{} % Class/lecture time
 \newcommand{\hmwkClassInstructor}{} % Teacher/lecturer
@@ -75,7 +75,7 @@
 \author{
 \textbf{Lu, Yi 1155041049 ylu@cse.cuhk.edu.hk}  \\
 \textbf{Qian, Yinling 1155041291 ylqian@cse.cuhk.edu.hk} \\
-\textbf{Chen Xixian 1155036600 xxchen@cse.cuhk.edu } \\
+\textbf{Chen Xixian 1155036600 xxchen@cse.cuhk.edu.hk } \\
 \textbf{Zhang, Zhi 1155039997 cheungZeeCn@gmail.com}
 }
 \date{} % Insert date here if you want it to appear below your name
@@ -85,8 +85,11 @@
 \begin{document}
 
 \maketitle 
+\thispagestyle{empty}
 
 \newpage
+\pagenumbering{arabic}
+
 \section{Motivation}
 Online information is wildly increasing since the last decade. Providing meaningful information timely has become urgent needs for companies like Microsoft, Google, Facebook, etc. Naively searching all the data assuredly won’t meet the demand. A basic solution would come into mind: category the information by topics or keywords. This encounters a problem: not every item has been given topics or keywords. Manually extracting the keywords may work in small datasets, but it will never be applicable for a search engine company. Thus, we need to design an algorithm which would work on disparate stack exchange sites to predict the tags (a.k.a. keywords, topics, summaries).
 
